@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    color: hsl(300, 43%, 22%);
+    color: hsl(333, 80%, 67%);
+    color: hsl(303, 10%, 53%);
+
+}
+
+body {
+    height: 98vh;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-x: 300px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:50% 50% ;
+    padding: 80px;
+    height: 100%;
+    background-image: url(/images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.text h1 {
+    color:hsl(300, 43%, 22%) ;
+    width: 70%;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color:hsl(303, 10%, 53%) ;
+    width: 80%;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.stare {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+
+}
+
+.stare .box {
+    display: flex;
+    width: 80%;
+    height: 25%;
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 20px;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 5px;
+    color: hsl(300, 43%, 22%);
+}
+.stare .box2{
+    margin-left: 10%;
+}
+
+.stare .box3{
+    margin-left: 20%;
+}
+
+.stare h4 {
+    margin-left: 20px;
+    margin-right: -20px;
+    font-size: 15px;
+}
+
+.stare img {
+    width: auto;
+    margin-left: 10px;
+}
+
+.stare .box div img {
+    margin-left: -0px;
+}
+.stare .box div :first-child {
+    margin-left: 15px;
+}
+
+
+
+.boxs {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 25px;
+    margin-top: 40px;
+   
+
+}
+
+.boxs .box{
+    background-color: rgb(124, 32, 71);
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+
+}
+
+.boxs img {
+    border-radius: 50%;
+    width: 35px;
+    margin-right: 20px;
+}
+
+.boxs .box >div {
+    display: flex;
+}
+
+.boxs .box h6 {
+    margin-top: 5px;
+}
+
+.boxs .box span {
+    display: block;
+    color: hsl(333, 80%, 67%);
+}
+
+.boxs .box p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-weight: normal;
+
+}
+
+.boxs :nth-child(2){
+    margin-top: 5%;
+    
+}
+
+.boxs :nth-child(3){
+    margin-top: 10%;
+}
+
+@media (max-width: 676px) {
+    body {
+        height:100%;
+        background-image: url(/images/bg-pattern-bottom-mobile.svg);
+        padding-bottom: 10%;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows:20% 25% 55% ;
+        padding: 50px  20px 20px 20px;
+        background-image:none;
+    }
+    .text {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
+    }
+    .stare {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .boxs {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); 
+        grid-gap: 15px;
+        margin-top: 0px;
+    }
+    .text h1 {
+        width: 80%;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .text p {
+        color:hsl(303, 10%, 53%) ;
+        width: 100%;
+        line-height: 1.8;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+.stare .box {
+    flex-direction: column;
+    width:100%;
+    height: 25%;
+    margin-bottom: 20px;
+    justify-content:center;
+    align-items: center;
+    
+}
+.stare .box2{
+    margin-left: 0%;
+}
+
+.stare .box3{
+    margin-left: 0%;
+}
+
+.stare h4 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+}
+
+.stare img {
+    width: auto;
+    margin-left: 0px;
+}
+
+.stare .box :first-child{
+    margin-left: 0;
+    text-align: center;
+    
+}
+.boxs :nth-child(2){
+    margin-top: 0%;
+    
+}
+
+.boxs :nth-child(3){
+    margin-top: 0%;
+}
+    
+}
